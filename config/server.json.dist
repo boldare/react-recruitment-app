@@ -1,0 +1,10 @@
+{
+  "port": 5000,
+  "database": {
+    "host": "mongo",
+    "name": "retromeet",
+    "port": 27017,
+    "user": "",
+    "pass": ""
+  }
+}

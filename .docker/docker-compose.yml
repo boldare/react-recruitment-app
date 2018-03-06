@@ -1,0 +1,54 @@
+version: '2'
+services:
+  client:
+    container_name: retro_client
+    working_dir: /client
+    build:
+        context: ./client
+    environment:
+      env_file: .env
+      NODE_ENV: "$NODE_ENV"
+      CLIENT_PORT: "$CLIENT_PORT"
+    ports:
+        - "${CLIENT_PORT}:${CLIENT_PORT}"
+    volumes:
+        - ../.:/client
+        - ../build:/client/build
+    links:
+      - api
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  api:
+    container_name: retro_api
+    working_dir: /api
+    build:
+        context: ./api
+    environment:
+        env_file: .env
+        DATABASE: mongo
+        NODE_ENV: "$NODE_ENV"
+    ports:
+        - "${API_PORT}:${API_PORT}"
+        - "${INSPECT_PORT}:${INSPECT_PORT}"
+    volumes:
+        - ../.:/api
+    links:
+      - mongo
+    depends_on:
+      - mongo
+    restart: unless-stopped
+
+  mongo:
+      image: mongo:3.6
+      container_name: retro_mongo
+      volumes:
+        - ../database:/data/db
+      command: mongod --port ${MONGO_PORT}
+      environment:
+        env_file: .env
+
+      ports:
+        - "${MONGO_PORT}:${MONGO_PORT}"
+      restart: unless-stopped

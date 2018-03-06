@@ -1,0 +1,67 @@
+{
+  "app": {
+    "name": "Retromeet",
+    "footer": "{copyright} - Aplikacja Rekrutacyjna"
+  },
+  "retro": {
+    "id": "ID Retrospektywy",
+    "moderator-panel": "PANEL MODERATORA",
+    "add-card-label": "O czym myślisz?",
+    "confirm-delete-card": "Czy na pewno chcesz usunąć?",
+    "remaining-votes": "Pozostało głosów",
+    "previous-step": "Wróć do poprzedniego etapu spotkania",
+    "next-step": "Przejdź do kolejnego etapu spotkania"
+  },
+  "retro-steps": {
+    "write": "Zgłoś swoje spostrzeżenia",
+    "vote": "Zagłosuj na najważniejsze kwestie",
+    "take-actions": "Zdecyduj się na działania",
+    "closed": "Zamknij spotkanie"
+  },
+  "set-name": {
+    "header": "Ustaw swoją nazwę",
+    "name": "Nazwa",
+    "set-name": "Ustaw nazwę",
+    "name-not-empty": "Twoja nazwa nie może być pusta"
+  },
+  "homepage": {
+    "message": "Bierz udział w retrospektywach online.{nl}Szybko i prosto.",
+    "start-retro": "Rozpocznij retro",
+    "join": "Dołącz"
+  },
+  "columns": {
+    "header": "Kolumny",
+    "columns": "Kolumny",
+    "new-column": "Nowa kolumna",
+    "column-name": "Nazwa",
+    "no-columns": "Dodajmy kolumny do retro.",
+    "icon": "Ikona",
+    "column-name-required": "Nazwa kolumny jest wymagana"
+  },
+  "start-retro": {
+    "header": "Rozpocznij retrospektywę",
+    "description": "Zacznijmy od nazwania tego retro.",
+    "name": "Nazwa",
+    "name-required": "Nazwa retrospektywy jest wymagana"
+  },
+  "join-retro": {
+    "header": "Dołącz do retro",
+    "description": "Poproś osoby uczestniczące w retro o łącze. Jeśli posiadasz już identyfikator retro to wklej go poniżej, aby dołączyć!",
+    "enter-identifier": "Podaj szesnastoznakowy identyfikator retrospektywy",
+    "join": "Dołącz"
+  },
+  "share": {
+    "header": "Udostępnij"
+  },
+  "navigation": {
+    "copy": "Kopiuj",
+    "cancel": "Anuluj",
+    "next": "Dalej",
+    "back": "Wstecz",
+    "done": "Gotowe",
+    "ok": "OK"
+  },
+  "about": {
+    "description": "Framework OCRA został utworzony w rezultacie wielu podjętych decyzji przez Mateusza Grzesiukiewicza. Powstał z myślą bycia boilerplate który umożliwia łatwe i szybke rozpoczęcie pracy nad aplikacją produkcyjną. Stack technologiczny jest łatwy do zmiany, wybierz tylko to co lubisz. Biblioteki mogą być łatwo wymienione na alternatywy ale OCRA z założenia będzie starała się zawsze być kompatybilna ze zmianami zespołu Create React App."
+  }
+}
